@@ -1,4 +1,4 @@
-## forked from: [namrog84/react-native-zip-archive](namrog84/react-native-zip-archive) and added auto-linking to windows platform
+## forked from: [namrog84/react-native-zip-archive](https://github.com/namrog84/react-native-zip-archive) and added auto-linking to windows platform
 
 ## Installation
 
@@ -26,3 +26,8 @@ For Andriod, it's ready to go.
 ````bash
 npx react-native autolink-windows
 ````
+
+
+## Documentation
+
+see [https://github.com/namrog84/react-native-zip-archive](https://github.com/namrog84/react-native-zip-archive)
