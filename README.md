@@ -1,4 +1,7 @@
-## forked from: [namrog84/react-native-zip-archive](https://github.com/namrog84/react-native-zip-archive) and added auto-linking to windows platform
+## forked from: [namrog84/react-native-zip-archive](https://github.com/namrog84/react-native-zip-archive) 
+
+- [windows] added auto-linking 
+- [windows] fiexed wrong canonical paths 
 
 ## Installation
 
