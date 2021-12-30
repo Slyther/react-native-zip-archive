@@ -56,7 +56,7 @@ try
             auto destinationPathTemp = destinationPath;
             destinationPathTemp += appDataRootFolderPath;
 
-            std::filesystem::path canonicalDestinationPath = std::filesystem::canonical(destinationPathTemp);
+            std::filesystem::path canonicalDestinationPath = destinationPath; // modified ny nejcet // ORG: std::filesystem::canonical(destinationPathTemp);
 
             for (mz_uint i = 0; i < mz_zip_reader_get_num_files(&archive); i++)
             {
@@ -83,8 +83,7 @@ try
 
                     auto fullDestinationPathTemp = fullDestinationPath;
                     fullDestinationPathTemp += appDataRootFolderPath;
-                    std::filesystem::path canonicalFullDestinationPath =
-                        std::filesystem::canonical(fullDestinationPathTemp);
+                    std::filesystem::path canonicalFullDestinationPath = fullDestinationPath; // modified ny nejcet // ORG: std::filesystem::canonical(fullDestinationPathTemp);
 
                     if (0 != canonicalFullDestinationPath.u8string().find(canonicalDestinationPath.u8string()))
                     {
